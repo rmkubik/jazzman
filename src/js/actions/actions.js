@@ -9,7 +9,18 @@ export default {
             ...answers.slice(index + 1)
         ]
     }),
-    validateAnswer: index => state => {
-        console.log(state.answers[index]);
+    validateAnswer: index => ({ answers }) => {
+        if (answers[index].value === answers[index].solution) {
+            return {
+                answers: [
+                    ...answers.slice(0, index),
+                    {
+                        ...answers[index],
+                        solved: true
+                    },
+                    ...answers.slice(index + 1)
+                ]
+            };
+        }
     }
 };

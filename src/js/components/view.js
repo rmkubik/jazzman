@@ -11,6 +11,7 @@ const View = (state, actions) => (
                     actions.updateInputValue({ index, value });
                 }}
                 validateAnswer={() => actions.validateAnswer(index)}
+                solved={state.answers[index].solved}
             />
         ))}
     </div>
