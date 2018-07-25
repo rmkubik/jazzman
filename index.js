@@ -1,6 +1,6 @@
 import { h, app } from "hyperapp";
 
-import view from "./src/js/components/View";
+import view from "./src/js/components/view";
 import state from "./src/js/state/state";
 import actions from "./src/js/actions/actions";
 
