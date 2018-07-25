@@ -4,7 +4,18 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "parcel index.html",
+        "build": "parcel build index.html"
     },
-    "author": ""
+    "author": "",
+    "dependencies": {
+        "babel-plugin-transform-react-jsx": "^6.24.1",
+        "hyperapp": "^1.2.8",
+        "node-sass": "^4.9.2",
+        "reset-css": "^4.0.1"
+    },
+    "devDependencies": {
+        "parcel-bundler": "^1.9.7",
+        "parcel-plugin-clean-dist": "0.0.6"
+    }
 }

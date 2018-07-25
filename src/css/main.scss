@@ -1,0 +1,11 @@
+@import "node_modules/reset-css/sass/_reset";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
