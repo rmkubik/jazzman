@@ -1,7 +1,8 @@
 function answerFactory(solution) {
     return {
         solution,
-        answered: false
+        value: "",
+        solved: false
     };
 }
 
