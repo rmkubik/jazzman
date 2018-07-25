@@ -1,16 +1,10 @@
+import answerFactory from "./answerFactory";
+
 export default {
     answers: [
-        {
-            solution: "asdf"
-        },
-        {
-            solution: "asdf"
-        },
-        {
-            solution: "asdf"
-        },
-        {
-            solution: "asdf"
-        }
+        answerFactory("asdf"),
+        answerFactory("asdf"),
+        answerFactory("asdf"),
+        answerFactory("asdf")
     ]
 };
