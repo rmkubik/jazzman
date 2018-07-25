@@ -1,9 +1,10 @@
 import { h } from "hyperapp";
 
+import Answer from "./answer";
+
 const View = (state, actions) => (
     <div>
-        <input type="text" />
-        <button>Submit</button>
+        {state.answers.map(({ solution }) => <Answer solution={solution} />)}
     </div>
 );
 

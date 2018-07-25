@@ -1,3 +1,16 @@
 export default {
-    count: 0
+    answers: [
+        {
+            solution: "asdf"
+        },
+        {
+            solution: "asdf"
+        },
+        {
+            solution: "asdf"
+        },
+        {
+            solution: "asdf"
+        }
+    ]
 };
