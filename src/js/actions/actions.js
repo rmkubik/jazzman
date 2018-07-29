@@ -10,7 +10,10 @@ export default {
         ]
     }),
     validateAnswer: index => ({ answers }) => {
-        if (answers[index].value === answers[index].solution) {
+        if (
+            answers[index].value.toLowerCase() ===
+            answers[index].solution.toLowerCase()
+        ) {
             return {
                 answers: [
                     ...answers.slice(0, index),
