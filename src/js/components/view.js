@@ -2,8 +2,14 @@ import { h } from "hyperapp";
 
 import Answer from "./answer";
 
+import "../../css/animations/shake.scss";
+
+function areAllQestionsSolved(state) {
+    return state.answers.every(answer => answer.solved === true);
+}
+
 const View = (state, actions) => (
-    <div>
+    <div className={areAllQestionsSolved(state) ? "shake" : ""}>
         {state.answers.map(({ solution }, index) => (
             <Answer
                 value={state.answers[index].value}
