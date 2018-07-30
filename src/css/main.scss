@@ -9,3 +9,13 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+body {
+    background-color: #202222;
+}
+
+body * {
+    font-family: monospace;
+    color: white;
+    background-color: transparent;
+}
