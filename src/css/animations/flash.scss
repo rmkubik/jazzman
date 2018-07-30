@@ -11,9 +11,11 @@
     from {
         z-index: 0;
         background-color: white;
+        opacity: 0;
     }
     to {
         z-index: -1;
         background-color: black;
+        opacity: 1;
     }
 }
