@@ -11,8 +11,8 @@ export default {
     }),
     validateAnswer: index => ({ answers }) => {
         if (
-            answers[index].value.toLowerCase() ===
-            answers[index].solution.toLowerCase()
+            stripPunctuation(answers[index].value.toLowerCase()) ===
+            stripPunctuation(answers[index].solution.toLowerCase())
         ) {
             return {
                 answers: [
@@ -27,3 +27,11 @@ export default {
         }
     }
 };
+
+function stripPunctuation(str) {
+	if (typeof str !== 'string') {
+		throw new TypeError('Expected a string');
+	}
+
+	return str.replace(/[&\/\\#,+\(\)$~%\.!^'"\;:*?\[\]<>{}]/g, '');
+}
